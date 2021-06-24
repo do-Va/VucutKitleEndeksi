@@ -1,0 +1,74 @@
+.btmNedir-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem;
+  width: 90%;
+  height: 80%;
+  margin: 7rem auto;
+  background: rgba(250, 250, 250, 0.26);
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+
+  & > *:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  & > .title {
+    background: linear-gradient(
+      to left,
+      rgb(210, 53, 216),
+      rgb(69, 168, 84),
+      rgb(62, 148, 240),
+      rgb(34, 82, 118)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media only screen and (max-width: 400px) {
+      font-size: 2rem;
+    }
+  }
+
+  .description {
+    text-align: justify;
+    text-indent: 3rem;
+    line-height: 1.6;
+    @media only screen and (max-width: 400px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .img {
+    width: 100%;
+    filter: grayscale(100%);
+    border-radius: inherit;
+    filter: grayscale(100%) drop-shadow(0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5));
+
+    @media only screen and (min-width: 600px) {
+      width: 90%;
+    }
+
+    @media only screen and (min-width: 800px) {
+      width: 80%;
+    }
+
+    @media only screen and (min-width: 1000px) {
+      width: 70%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      width: 60%;
+    }
+
+    @media only screen and (min-width: 1400px) {
+      width: 50%;
+    }
+
+    @media only screen and (min-width: 1600px) {
+      width: 40%;
+    }
+  }
+}
